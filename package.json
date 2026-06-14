@@ -1,0 +1,31 @@
+{
+  "name": "@bitcoinbenji/mcp",
+  "version": "0.1.1",
+  "description": "MCP server for Bitcoin Benji API — Lightning-paid mempool intelligence + AI inference. Sovereign, on-prem, no third-party APIs.",
+  "mcpName": "io.github.ocbenji/bitcoinbenji-mcp",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "bitcoinbenji-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["mcp", "bitcoin", "lightning", "l402", "ai", "mempool", "model-context-protocol"],
+  "author": "Bitcoin Benji",
+  "license": "MIT",
+  "homepage": "https://api.bitcoinbenji.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocbenji/bitcoinbenji-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ocbenji/bitcoinbenji-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
