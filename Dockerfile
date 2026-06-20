@@ -13,5 +13,6 @@ RUN npm install --omit=dev --no-audit --no-fund
 # App code.
 COPY index.js ./
 
-# stdio MCP server.
-ENTRYPOINT ["node", "index.js"]
+# stdio MCP server. Use CMD (not ENTRYPOINT) so Glama's deploy reads a command
+# argument — an ENTRYPOINT-only image trips "At least one command argument is required".
+CMD ["node", "index.js"]
